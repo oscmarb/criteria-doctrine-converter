@@ -33,7 +33,7 @@ class CriteriaDoctrineConverter
      */
     protected function __construct(
         private QueryBuilder $queryBuilder,
-        private array        $fields
+        private array $fields
     )
     {
         $this->queryBuilder = clone $queryBuilder;
@@ -143,13 +143,13 @@ class CriteriaDoctrineConverter
 
         if (true === $operator->isContains()) {
             /** @phpstan-ignore-next-line */
-            $value = '%' . $value . '%';
+            $value = '%'.$value.'%';
         } elseif (true === $operator->isStartsWith()) {
             /** @phpstan-ignore-next-line */
-            $value = $value . '%';
+            $value = $value.'%';
         } elseif (true === $operator->isEndsWith()) {
             /** @phpstan-ignore-next-line */
-            $value = '%' . $value;
+            $value = '%'.$value;
         }
 
         $parameterPosition = $this->parameterCount++;
