@@ -1,0 +1,36 @@
+{
+  "name": "oscmarb/criteria-doctrine-converter",
+  "type": "library",
+  "description": "Criteria Doctrine converter library",
+  "keywords": [
+    "criteria",
+    "doctrine",
+    "converter",
+    "library",
+    "search",
+    "database"
+  ],
+  "homepage": "https://github.com/oscmarb/criteria-doctrine-converter",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Óscar Martínez",
+      "email": "oscmarb@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "doctrine/orm": "^2.19",
+    "oscmarb/criteria": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Oscmarb\\CriteriaDoctrineConverter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Oscmarb\\CriteriaDoctrineConverter\\Tests\\": "tests/"
+    }
+  }
+}

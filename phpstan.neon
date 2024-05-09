@@ -1,0 +1,12 @@
+parameters:
+  checkMissingIterableValueType: false
+  checkExplicitMixed: false
+  parallel:
+    maximumNumberOfProcesses: 4
+    minimumNumberOfJobsPerProcess: 1
+  level: 9
+  paths:
+    - src
+    - tests
+  fileExtensions:
+    - php
